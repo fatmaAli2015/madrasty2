@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourname="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context=".Activities.Categories.subCategories.NewFinancialActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:weightSum="8">
+
+        <com.example.fatmaali.madrasty2.Utilities.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="top"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:lineSpacingExtra="6dp"
+            android:padding="18dp"
+            android:text="@string/txtFinancial"
+            yourname:customFont="bukra_medium.ttf" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/recylerViewFin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="6">
+
+                <LinearLayout
+                    android:id="@+id/basicInfLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="3.7"
+                            android:background="@drawable/btnbg1"
+                            android:weightSum="2">
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="right|center"
+                                android:paddingRight="5dp"
+                                android:text="@string/basicInformation"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center_horizontal|center"
+                                android:text="@string/one"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="35dp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.3"
+                            android:scaleType="center"
+                            android:src="@drawable/basicinf" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/predecessorLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="3.7"
+                            android:background="@drawable/btnbg2"
+                            android:weightSum="2">
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="right|center"
+                                android:paddingRight="5dp"
+                                android:text="@string/predecessor"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center_horizontal|center"
+                                android:text="@string/two"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="35dp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.3"
+                            android:scaleType="center"
+                            android:src="@drawable/predecessor" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/NumberOfPayersLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="3.7"
+                            android:background="@drawable/btnbg3"
+                            android:weightSum="2">
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="right|center"
+                                android:paddingRight="5dp"
+                                android:text="@string/NumberOfPayers"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center_horizontal|center"
+                                android:text="@string/three"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="35sp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.3"
+                            android:scaleType="center"
+                            android:src="@drawable/numberofpayers" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/previousBalanceLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="3.7"
+                            android:background="@drawable/btnbg4"
+                            android:weightSum="2">
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="right|center"
+                                android:paddingRight="5dp"
+                                android:text="@string/previousBalance"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center_horizontal|center"
+                                android:text="@string/four"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="35dp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.3"
+                            android:scaleType="center"
+                            android:src="@drawable/previousbalance" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/OtherDepositsLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="3.7"
+                            android:background="@drawable/btnbg1"
+                            android:weightSum="2">
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="right|center"
+                                android:paddingRight="5dp"
+                                android:text="@string/OtherDeposits"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center_horizontal|center"
+                                android:text="@string/five"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="35dp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.3"
+                            android:scaleType="center"
+                            android:src="@drawable/otherdeposits" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/printingLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="5">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="3.7"
+                            android:background="@drawable/btnbg1"
+                            android:weightSum="2">
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.5"
+                                android:gravity="right|center"
+                                android:paddingRight="5dp"
+                                android:text="@string/printing"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="17sp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center_horizontal|center"
+                                android:text="@string/six"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="35dp"
+                                android:textStyle="bold"
+                                yourname:customFont="bukra_medium.ttf" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.3"
+                            android:scaleType="center"
+                            android:src="@drawable/printing" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

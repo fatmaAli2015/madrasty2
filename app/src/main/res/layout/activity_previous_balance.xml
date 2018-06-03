@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:yourname="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Steps.PreviousBalanceActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/basic_infbg"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="7">
+
+                    <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                        android:id="@+id/fontTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/confirmBasicInf"
+                        android:textColor="@color/colorTextC"
+                        android:textSize="15dp"
+                        yourname:customFont="bukra_regular.ttf" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recylerViewFinScrolling"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:nestedScrollingEnabled="true"
+                        android:overScrollMode="never"
+                        android:padding="15dp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:orientation="horizontal"
+                            android:padding="10dip"
+                            android:weightSum="2">
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:id="@+id/total"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint=" اجمالى الرصيد السابق "
+                                android:textSize="15dp"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:id="@+id/totalAppear"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:onClick="totalAppear"
+                                android:text="اجمالى الرصيد السابق "
+                                android:textSize="15dp"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:id="@+id/SaleOrderLines"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="2dp"
+                        android:padding="10dp"
+                        android:stretchColumns="*">
+
+                        <TableRow
+                            android:layout_margin="5dp"
+                            android:orientation="horizontal"
+                            android:padding="10dip"
+                            android:weightSum="1">
+
+                            <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                                android:id="@+id/result"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:hint="0.00"
+                                android:textSize="20dp"
+                                yourname:customFont="bukra_medium.ttf" />
+
+                        </TableRow>
+                    </TableLayout>
+
+                    <com.example.fatmaali.madrasty2.Utilities.FontTextView
+                        android:id="@+id/btn_BasicInf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/basic_infbtnbg"
+                        android:gravity="center"
+                        android:hint="@string/send"
+                        android:onClick="btn_PreviousBalance"
+                        android:padding="15dp"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="27dp"
+                        yourname:customFont="bukra_medium.ttf" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
